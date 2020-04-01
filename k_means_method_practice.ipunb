@@ -1,0 +1,6 @@
+from sklearn.datasets import make_blobs
+X, y = make_blobs(n_samples=300, #サンプルデータの総数
+                  n_features=2,  # 特微量の個数
+                  centers=3,         # 作成する正規分布の数
+                  random_state=0) #乱数生成器の状態を指定
+print(X)
